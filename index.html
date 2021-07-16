@@ -202,30 +202,31 @@ Podemos detenernos a pensar como afecta la industria a nuestra vida y bienestar 
             referrerpolicy="no-referrer"
         ></script>
         <!--ESTE ES EL SCRIPT PARA EL GRÁFICO-->
-        <script>
-            var ctx = document.getElementById("nuestroGrafico");
-            var nuestroGrafico = new Chart(ctx, {
-                type: "line",
-                data: {
-                    labels: ["Red", "Blue", "Yellow", "Green", "Cyan", "Magenta"],
-                    datasets: [
-                        {
-                            label: "# of Votes",
-                            data: [12, 19, 3, 5, 2, 3],
-                            backgroundColor: ["#FF0000", "#0000FF", "#FFFF00", "#00FF00", "#00FFFF", "#FF00FF"],
-                            borderWidth: 1,
-                        },
-                    ],
-                },
-                options: {
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                        },
+     <!--ESTE ES EL SCRIPT PARA EL GRÁFICO-->
+     <script>
+        var ctx = document.getElementById("nuestroGrafico");
+        var nuestroGrafico = new Chart(ctx, {
+            type: "pie",
+            data: {
+                labels: ["Personas con acceso a saneamiento y agua", "Personas sin acceso a saneamiento", "Personas sin acceso a agua"],
+                datasets: [
+                    {
+                        label: "# Total de personas en el planeta",
+                        data: [4630, 2300, 800],
+                        backgroundColor: ["#D773FF", "#000000", "#FFFFFF"],
+                        borderWidth: 1,
+                    },
+                ],
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
                     },
                 },
-            });
-        </script>
+            },
+        });
+    </script>
         <!--NO BORRAR ESTA BIBLIOTECA DE JAVASCRIPT-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <!--ESTE ES EL SCRIPT PARA EL MODAL-->
