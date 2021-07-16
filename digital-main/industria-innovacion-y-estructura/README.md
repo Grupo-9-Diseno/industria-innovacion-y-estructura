@@ -1,1 +1,0 @@
-# industria-innovacion-y-estructura
